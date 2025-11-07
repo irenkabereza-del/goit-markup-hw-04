@@ -336,6 +336,10 @@ border-radius: 4px;
 width: 264px;
 height: 112px;
 }
+.icon-social-networks {
+    width: 40px;
+    height: 40px;
+}
 .social-networks {
   display: flex;
     justify-content: center;
