@@ -47,7 +47,7 @@ letter-spacing: 0.02em;
 color: #2e2f42; 
 }
 
-.nav-link-1 {
+.nav-link-studio {
 display: block;
 padding: 24px 0;
 font-weight: 500;
@@ -57,8 +57,9 @@ letter-spacing: 0.02em;
 color: #2e2f42; 
 position: relative;
 color: #404bbf;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link-1::after {
+.nav-link-studio::after {
     content: '';
      width: 100%;
      position: absolute;
@@ -67,7 +68,7 @@ color: #404bbf;
       height: 4px;
        background-color: #404bbf;
        border-radius: 2px;
-       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
 }
 .nav-link:hover,
 .nav-link:focus{
@@ -77,7 +78,7 @@ color: #404bbf;
     font-style: normal;
     margin-left: auto;
 }
-.contacts-item {
+.contacts-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -306,14 +307,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-items {
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .portfolio-items:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transform: translateY(0%);
     }
-    .portfolio-items:hover {
-        transform: translateY(0%);
-    }
+   
 
 .description-portfolio-container {
     padding: 32px 16px;
@@ -376,7 +376,7 @@ overflow: hidden;
         rgba(46,47,66,0.7),
         rgba(46,47,66,0.7)
     ),
-    url(../images/hero\ image.jpg);
+    url(../images/img-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -396,8 +396,7 @@ height: 112px;
 }
 .icon-social-networks {
     width: 40px;
-    height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    height: 40px; 
 }
 .social-networks {
   display: flex;
@@ -413,6 +412,7 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-networks-link:hover,
 .social-networks-link:focus {
@@ -441,6 +441,7 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-networks-link:hover,
 .footer-social-networks-link:focus {
